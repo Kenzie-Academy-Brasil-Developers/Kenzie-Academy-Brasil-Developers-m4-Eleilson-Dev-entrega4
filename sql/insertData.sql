@@ -31,4 +31,4 @@ INSERT INTO books_categories ("booksId", "categoriesId") VALUES ('3', '1') RETUR
 INSERT INTO books_categories ("booksId", "categoriesId") VALUES ('4', '1') RETURNING *;
 
 -- INSERT contact_info
-INSERT INTO contact_info ("phone", "email", "authorId") VALUES ('(44) 99123-4567', 'osvaldo@osvaldocompany.com', '3');
+INSERT INTO contact_info ("phone", "email", "authorId") VALUES ('(44) 99123-4567', 'osvaldo@osvaldocompany.com', '3') RETURNING *;
