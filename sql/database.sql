@@ -4,7 +4,7 @@ CREATE TABLE authors (
   "bio" TEXT NOT NULL
 );
 
-CREATE TABLE contact_info (
+CREATE TABLE contact_infos (
   "id" SERIAL PRIMARY KEY,
   "phone" VARCHAR(20) NOT NULL,
   "email" VARCHAR(200) NOT NULL,

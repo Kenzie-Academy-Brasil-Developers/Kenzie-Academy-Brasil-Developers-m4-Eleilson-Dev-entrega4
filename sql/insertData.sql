@@ -4,7 +4,7 @@ INSERT INTO authors ("name", "bio") VALUES ('J. K. Rowling', 'J. K. Rowling é u
 INSERT INTO authors ("name", "bio") VALUES ('Osvaldo Silva', 'Autor e compositor brasileiro.') RETURNING *;
 
 -- INSERT Livros
-INSERT INTO books ("name", "pages", "createdAt", "updatedAt", 'authorId') VALUES ('Harry Potter', '325', '2024-07-08', '2024-07-08', '2') RETURNING *;
+INSERT INTO books ("name", "pages", "createdAt", "updatedAt", "authorId") VALUES ('Harry Potter', '325', '2024-07-08', '2024-07-08', '2') RETURNING *;
 INSERT INTO books ("name", "pages", "createdAt", "updatedAt") VALUES ('Jogos Vorazes', '276', '2024-07-08', '2024-07-08') RETURNING *;
 INSERT INTO books ("name", "pages", "createdAt", "updatedAt") VALUES ('One Piece - Volume 1', '120', '2024-07-08', '2024-07-08') RETURNING *;
 INSERT INTO books ("name", "pages", "createdAt", "updatedAt") VALUES ('One Piece - Volume 2', '137', '2024-07-08', '2024-07-08') RETURNING *;
@@ -31,4 +31,4 @@ INSERT INTO books_categories ("booksId", "categoriesId") VALUES ('3', '1') RETUR
 INSERT INTO books_categories ("booksId", "categoriesId") VALUES ('4', '1') RETURNING *;
 
 -- INSERT contact_info
-INSERT INTO contact_info ("phone", "email", "authorId") VALUES ('(44) 99123-4567', 'osvaldo@osvaldocompany.com', '3') RETURNING *;
+INSERT INTO contact_infos ("phone", "email", "authorId") VALUES ('(44) 99123-4567', 'osvaldo@osvaldocompany.com', '3') RETURNING *;
