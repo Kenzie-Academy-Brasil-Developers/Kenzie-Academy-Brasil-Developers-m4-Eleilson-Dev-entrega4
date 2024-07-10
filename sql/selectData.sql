@@ -1,6 +1,6 @@
 SELECT * FROM books;
 
-SELECT * FROM books
+SELECT books. * FROM books
 JOIN books_categories ON books."id" = books_categories."booksId"
 JOIN categories ON categories."id" = books_categories."categoriesId"
 WHERE categories."id" = 1;
