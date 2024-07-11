@@ -1,6 +1,6 @@
 CREATE TABLE authors (
   "id" SERIAL PRIMARY KEY,
-  "name" VARCHAR(50) NOT NULL,
+  "name" VARCHAR(200) NOT NULL,
   "bio" TEXT NOT NULL
 );
 
@@ -14,7 +14,7 @@ CREATE TABLE contact_infos (
 
 CREATE TABLE books (
   "id" SERIAL PRIMARY KEY,
-  "name" VARCHAR(50) NOT NULL, 
+  "name" VARCHAR(200) NOT NULL, 
   "pages" INTEGER NOT NULL,
   "createdAt" TIMESTAMP NOT NULL,
   "updatedAt" TIMESTAMP NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE books (
 
 CREATE TABLE categories (
   "id" SERIAL PRIMARY KEY,
-  "name" VARCHAR(50) NOT NULL,
+  "name" VARCHAR(100) NOT NULL,
   "createdAt" TIMESTAMP NOT NULL,
   "updatedAt" TIMESTAMP NOT NULL
 );
